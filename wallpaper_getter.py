@@ -174,5 +174,5 @@ if __name__ == "__main__":
         print("log file exists")
 
     logger = setup_logger(LOG_FILE)
-
+    copy_files(SOURCE_FOLDER.replace("hyskr", "game"), TARGET_FOLDER_LANDSCAPE, TARGET_FOLDER_PORTRAIT)
     copy_files(SOURCE_FOLDER, TARGET_FOLDER_LANDSCAPE, TARGET_FOLDER_PORTRAIT)
